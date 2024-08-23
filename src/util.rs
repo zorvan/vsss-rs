@@ -105,7 +105,7 @@ impl CtIsZero for i64 {
     }
 }
 
-#[cfg(target_pointer_width = "64")]
+//#[cfg(target_pointer_width = "64")]
 impl CtIsZero for u128 {
     fn ct_is_zero(&self) -> subtle::Choice {
         let t = *self as i128;
